@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Coffee</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="container">
+        <a class="header__link" href="./index.html">
+          <picture>
+            <source
+              media="(max-width: 425px)"
+              srcset="./images/logo-header-mobile.svg"
+            />
+
+            <img
+              class="header__logo"
+              src="./images/logo-header.svg"
+              alt="Coffee`s logo"
+              width="236"
+              height="26"
+            />
+          </picture>
+        </a>
+
+        <button class="header__menu-button" type="button">
+          <span class="hamburger">&#9776;</span>
+          <span class="back-button">&#x2715;</span>
+        </button>
+
+        <!-- Nav -->
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./index.html">
+                home
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="./about.html"> about us </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="./plan.html"> create your plan </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+
+    <main class="main">
+      <!-- Hero -->
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__controller">
+            <h1 class="hero__heading">Great coffee made simple.</h1>
+
+            <p class="hero__description">
+              Start your mornings with the world’s best coffees. Try our
+              expertly curated artisan coffees from our best roasters delivered
+              directly to your door, at your schedule.
+            </p>
+
+            <a class="hero__link button" href="#">Create your plan</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@mixin heading(
+  $margin: 0,
+  $size: 40px,
+  $height: 48px,
+  $color: rgba(254, 252, 247, 1),
+  $opacity: 1
+) {
+  margin: $margin;
+  font-family: "Fraunces", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  opacity: $opacity;
+}
+
+@mixin description(
+  $margin: 0,
+  $weight: 400,
+  $size: 16px,
+  $height: 26px,
+  $color: rgba(254, 252, 247, 1),
+  $opacity: 0.8
+) {
+  margin: $margin;
+  font-family: "Barlow", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  opacity: $opacity;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin button(
+  $size: 18px,
+  $height: 25px,
+  $color: rgba(254, 252, 247, 1),
+  $bg-color: rgba(14, 135, 132, 1),
+  $bg-color--hover: rgba(102, 210, 207, 1)
+) {
+  display: block;
+  max-width: 215px;
+  padding: 15px;
+  font-family: "Fraunces", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: $bg-color;
+  border: 0;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $bg-color--hover;
+  }
+}
